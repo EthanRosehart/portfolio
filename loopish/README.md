@@ -1,16 +1,7 @@
-# Loopish
+# Loopish UI (Local-first MVP)
+Loop-like block editor with Text, Checklist, Kanban, Progress, Charts (ECharts), and Flowchart (React Flow). Saves to localStorage; no realtime.
 
-Local-first workspace inspired by Microsoft Loop.
-
-## Tech Stack
-- React + TypeScript + Vite
-- Tailwind CSS
-- Zustand for state management
-
-## Development
-```
-npm install
+## Dev
+```bash
+npm i
 npm run dev
-```
-
-More blocks, canvas tools, and export options coming soon.
