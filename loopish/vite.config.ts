@@ -6,5 +6,5 @@ import react from '@vitejs/plugin-react'
 // If you’re NOT using GitHub Pages, you can delete the `base` line.
 export default defineConfig({
   plugins: [react()],
-  base: '/REPO_NAME/',
+  base: '/portfolio/',
 })
