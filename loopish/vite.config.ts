@@ -1,10 +1,11 @@
-// vite.config.ts
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// 👇 Replace REPO_NAME with your repo name, e.g. 'loopish-ui'.
-// If you’re NOT using GitHub Pages, you can delete the `base` line.
-export default defineConfig({
+const isCI = !!process.env.GITHUB_ACTIONS;
+const isProjectPage = true; // this repo deploys to ethanrosehart.github.io/portfolio
+
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: '/portfolio/',
-})
+  base: mode === 'production' && isProjectPage ? '/portfolio/' : '/',
+  build: { outDir: 'dist' }
+}));

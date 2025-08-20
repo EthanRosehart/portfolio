@@ -8,3 +8,5 @@ loopish/dist/
 # misc
 .DS_Store
 .env*
+loopish/storybook-static/
+loopish/test-results/
